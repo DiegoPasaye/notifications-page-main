@@ -5,6 +5,7 @@ const notificacion3 = document.querySelector(".third-notification")
 const redCircle1 = document.querySelector(".circulo1")
 const redCircle2 = document.querySelector(".circulo2")
 const redCircle3 = document.querySelector(".circulo3")
+const numero = document.querySelector(".number")
 
 const marcar = () => {
     console.log("hola")
@@ -14,6 +15,7 @@ const marcar = () => {
     redCircle1.style.display = "none"
     redCircle2.style.display = "none"
     redCircle3.style.display = "none"
+    numero.innerHTML = "0"
 }
 
 marcador.addEventListener("click", marcar)
