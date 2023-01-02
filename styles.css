@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+*{
+    margin: 0;
+    font-weight: 500;
+}
+html{
+    background: hsl(210, 60%, 98%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 800;
+}
+nav span{
+    background-color: hsl(219, 85%, 26%);
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 16px;
+    border-radius: 2px;
+    color: white;
+}
+nav p{
+    color: hsl(219, 12%, 42%);
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+    cursor: pointer;
+}
+nav p:hover{
+    animation: selectColor 0.5s;
+    animation-fill-mode: forwards;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15%;
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 10px 10px hsl(205, 33%, 90%);
+    border-radius: 10px;
+    margin-top: 8vw;
+    margin-bottom: 3vw;
+    padding-bottom: 3vw;
+}
+.messages-container{
+    display: flex;
+    flex-direction: column;
+}
+.notifications{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    margin-top: 20px;
+}
+.text-notification{
+    display: flex;
+    align-items: center;
+}
+.chess{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+.chessImage{
+    float: right;
+    cursor: pointer;
+    padding: 0;
+}
+.chessImage:hover{
+    box-shadow: 0px 0px 5px 5px hsl(205, 33%, 90%);
+}
+span{
+    cursor: pointer;
+}
+.notifications p{
+    color: hsl(219, 14%, 63%);
+}
+.gray-black{
+    color: hsl(219, 12%, 42%);
+}
+.activo{
+    background: hsl(210, 60%, 98%);
+    border-radius: 5px;
+}
+.red-circle{
+    width: 0.8vw;
+    height: 0.8vw;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 0.4vw;
+    margin-left: 1vw;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    width: 100%;
+}
+img{
+    width: 5%;
+    height: auto;
+    padding: 1vw;
+}
+
+.name{
+    color: black;
+    cursor: pointer;
+}
+.name:hover{
+    animation: nombres 0.5s;
+    animation-fill-mode: forwards;
+}
+.privateMessage{
+    width: 100%;
+    border: 1px solid hsl(211, 68%, 94%);
+    margin-top: 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.privateMessage:hover{
+    animation: privatecolor 0.5s;
+    animation-fill-mode: forwards;
+}
+.privateMessage p{
+    padding: 1vw;
+}
+.time{
+    margin-top: 5px;
+}
+@keyframes privatecolor{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: hsl(205, 33%, 90%);
+    }
+}
+@keyframes selectColor{
+    0%{
+    }
+    100%{
+        color: hsl(219, 85%, 26%);
+    }
+}
+@keyframes nombres{
+    0%{
+
+    }
+    100%{
+    color: hsl(219, 85%, 26%);
+    }
+}
+@media (max-width: 650px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10vw;
+    }
+    .time{
+        margin-top: 1px;
+    }
+    img{
+        width: 10%;
+    }
+    nav h2{
+        font-size: 16px;
+    }
+    nav p{
+        font-size: 16px;
+    }
+}
